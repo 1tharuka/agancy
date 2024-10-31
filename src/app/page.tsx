@@ -9,7 +9,6 @@ import Card from '@/image/Card.png';
 import AutoSlider from '@/components/Slider';
 import { Blog } from '@/components/Blog';
 import Textsid from '@/components/Textsid';
-import Footer from '@/components/Footer';
 
 export default function Home() {
   return (

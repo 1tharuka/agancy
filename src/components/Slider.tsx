@@ -49,16 +49,6 @@ export default function LogoSlider({
     return () => clearInterval(timer);
   }, [logos.length, interval]);
 
-  const goToPrevious = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + logos.length) % logos.length
-    );
-  };
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % logos.length);
-  };
-
   return (
     <div className="relative w-full max-w-5xl mx-auto p-4 rounded-lg shadow-lg">
       <div className="overflow-hidden">
