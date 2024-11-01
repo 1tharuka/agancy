@@ -38,7 +38,7 @@ export default function RootLayout({
         {/* mane section */}
         <main>{children}</main>
         {/*footer  */}
-        <footer>
+        <footer className="mt-20">
           <Footer />
         </footer>
       </body>

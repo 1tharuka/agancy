@@ -59,10 +59,7 @@ export default function LogoSlider({
           {logos.map((logo, index) => (
             <div key={index} className="flex-shrink-0 w-1/4 px-4">
               <div className="flex flex-col items-center">
-                <logo.icon className="w-16 h-16 mb-2 text-white" />
-                <span className="text-sm font-medium text-center">
-                  {logo.name}
-                </span>
+                <logo.icon className="sm:w-16 sm:h-16 w-8 h-8 mb-2 text-white" />
               </div>
             </div>
           ))}

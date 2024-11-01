@@ -20,7 +20,7 @@ const Navbar = () => {
       </Link>
 
       <div className="sm:flex hidden  flex-row gap-10 text-white text-[12px]">
-        <Link href="/" className="">
+        <Link href="/Servis" className="">
           Servis
         </Link>
         <Link href="/" className="">
@@ -57,7 +57,7 @@ const Navbar = () => {
             </SheetTitle>
             <SheetDescription className="flex flex-col">
               <div className="flex  flex-col gap-5 text-white text-[12px] mt-5">
-                <Link href="/" className="text-lg">
+                <Link href="/Servis" className="text-lg">
                   Servis
                 </Link>
                 <Link href="/" className="text-lg">

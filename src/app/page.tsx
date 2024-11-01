@@ -3,12 +3,10 @@ import { ArrowRight, Dot } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Heroimage from '@/components/Heroimage';
-import Hotle from '@/image/hotel.png';
-import Ice from '@/image/Ice.png';
-import Card from '@/image/Card.png';
 import AutoSlider from '@/components/Slider';
-import { Blog } from '@/components/Blog';
 import Textsid from '@/components/Textsid';
+import Blog from '@/components/Blog';
+import Work from '@/components/Work';
 
 export default function Home() {
   return (
@@ -56,77 +54,28 @@ export default function Home() {
       </div>
 
       {/* our work */}
-      <div className="mt-10 flex sm:flex-row flex-col-reverse items-center justify-between">
-        <div className="flex flex-col gap-20">
-          <div className="flex flex-col gap-5 cursor-pointer">
-            <Image
-              src="/pexImag.jpg"
-              alt="work"
-              width={500}
-              height={300}
-              className="rounded-3xl"
-            />
-            <h1 className="text-xl">
-              Refreshing Gary Nevilles digital presence
-            </h1>
+      <div className="mt-10 flex flex-col">
+        <div className="flex flex-col gap-3">
+          <div className="flex-10 text-sm gap-2 flex flex-row">
+            <Dot /> Our Work
           </div>
-          <div className="flex flex-col gap-5 cursor-pointer">
-            <Image
-              src={Hotle}
-              alt="work"
-              width={500}
-              height={300}
-              className="rounded-3xl"
-            />
-            <h1 className="text-xl">
-              Refreshing Gary Nevilles digital presence
-            </h1>
-          </div>
-          <div className="ml-20">
-            <div className="flex-1 sm:text-4xl text-3xl mb-5">
-              Like what <br />
-              you see?
-            </div>
-            <Button className="bg-button hover:bg-button text-black rounded-full">
-              <Link href="/" className="flex flex-row items-center gap-3">
-                Contact Us <ArrowRight />
-              </Link>
-            </Button>
+          <div className="flex-1 sm:text-4xl text-3xl ">
+            Explore Our <br /> Work
           </div>
         </div>
-        <div className="flex flex-col gap-20">
-          <div className="flex flex-col gap-3">
-            <div className="flex-10 text-sm gap-2 flex flex-row">
-              <Dot /> Who are we?
-            </div>
-            <div className="flex-1 sm:text-4xl text-3xl ">
-              Explore Our <br /> Work
-            </div>
+        <div>
+          <Work />
+        </div>
+        <div className="ml-20">
+          <div className="flex-1 sm:text-4xl text-3xl mb-5">
+            Like what <br />
+            you see?
           </div>
-          <div className="flex flex-col gap-5 cursor-pointer">
-            <Image
-              src={Ice}
-              alt="work"
-              width={500}
-              height={300}
-              className="rounded-3xl"
-            />
-            <h1 className="text-xl">
-              Refreshing Gary Nevilles digital presence
-            </h1>
-          </div>
-          <div className="flex flex-col gap-5 cursor-pointer">
-            <Image
-              src={Card}
-              alt="work"
-              width={500}
-              height={300}
-              className="rounded-3xl"
-            />
-            <h1 className="text-xl">
-              Refreshing Gary Nevilles digital presence
-            </h1>
-          </div>
+          <Button className="bg-button hover:bg-button text-black rounded-full">
+            <Link href="/" className="flex flex-row items-center gap-3">
+              Contact Us <ArrowRight />
+            </Link>
+          </Button>
         </div>
       </div>
 
@@ -173,7 +122,7 @@ export default function Home() {
       </div>
 
       {/* CEO */}
-      <div className="flex sm:flex-row flex-col gap-10 justify-between mt-20">
+      <div className="flex sm:flex-row flex-col gap-10 justify-between mt-10">
         <div className="mt-20 ml-10 flex flex-col max-w-[500px] font-bold ">
           <h1 className="sm:text-5xl mb-2 text-4xl ">
             “At SOY, we{"'"}ve built something beyond anything I could have ever
@@ -225,13 +174,13 @@ export default function Home() {
       </div>
 
       {/* text sider */}
-      <div className="flex flex-col gap-10 my-20">
+      <div className="flex flex-col gap-10 my-10">
         <Textsid />
         <Textsid />
       </div>
 
       {/* blog */}
-      <div className="flex flex-col sm:flex-row gap-5 mt-10 justify-between items-start">
+      <div className="flex flex-col sm:flex-row gap-5 mt-10 mb-20 justify-between items-start h-fit">
         <div className="flex flex-col gap-5 flex-4 flex-2 ">
           <p className="flex-1 text-sm gap-3 flex flex-row ">
             <Dot /> Blog
@@ -250,7 +199,7 @@ export default function Home() {
             </Link>
           </Button>
         </div>
-        <div className="flex flex-row gap-5 overflow-hidden w-full">
+        <div className="flex flex-row gap-5 overflow-hidden w-full ">
           <Blog />
         </div>
       </div>
