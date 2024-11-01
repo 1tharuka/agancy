@@ -8,7 +8,7 @@ import { Card, CardContent } from './ui/card';
 const POSTS_QUERY = `*[
   _type == "Progectname"
   && defined(slug.current)
-]|order(publishedAt desc)[0...5]{ _id, title, slug,'image':image.asset -> url}`;
+]|order(publishedAt desc)[1...5]{ _id, title, slug,'image':image.asset -> url}`;
 
 const options = { next: { revalidate: 30 } };
 

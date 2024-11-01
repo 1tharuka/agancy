@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex sm:flex-row flex-col justify-between items-center gap-5">
         <div className="flex flex-col flex-1">
           <p className="text-sm font-light">
-            Hiya, we’re Soe <span className="animate-pulse">👋</span>{' '}
+            Hiya, we{'’'}re ZOY. <span className="animate-pulse">👋</span>{' '}
           </p>
           <h1 className="text-5xl sm:text-6xl font-bold mt-5">
             Sri Lanka-based web design and branding agency.
@@ -25,7 +25,7 @@ export default function Home() {
               variant="destructive"
               className="bg-gray-500 hover:bg-gray-400 rounded-full"
             >
-              <Link href="/" className="flex flex-row items-center gap-3">
+              <Link href="/work" className="flex flex-row items-center gap-3">
                 View Our Work{' '}
               </Link>
             </Button>
@@ -123,13 +123,13 @@ export default function Home() {
 
       {/* CEO */}
       <div className="flex sm:flex-row flex-col gap-10 justify-between mt-10">
-        <div className="mt-20 ml-10 flex flex-col max-w-[500px] font-bold ">
-          <h1 className="sm:text-5xl mb-2 text-4xl ">
+        <div className=" ml-10 flex flex-col max-w-[500px] font-bold ">
+          <h1 className="sm:text-5xl mt-5 mb-2 text-4xl ">
             “At SOY, we{"'"}ve built something beyond anything I could have ever
             imagined”
           </h1>
           <p className="text-xl ">Tharuka Dilshara</p>
-          <p className="text-sm text-gray-200">co-founder, Soe </p>
+          <p className="text-sm text-gray-400">co-founder, Soe </p>
         </div>
         <Image
           src="/CEO.png"
@@ -165,7 +165,7 @@ export default function Home() {
             variant="destructive"
             className="bg-button hover:bg-button text-black rounded-full max-w-48"
           >
-            <Link href="/" className="flex flex-row items-center gap-3">
+            <Link href="/about" className="flex flex-row items-center gap-3">
               About Us
               <ArrowRight />
             </Link>

@@ -45,13 +45,13 @@ const Footer = () => {
           </div>
 
           <div className="flex-1 flex  flex-col gap-10 text-white text-[20xp]">
-            <Link href="/" className="">
+            <Link href="/Servis" className="">
               Servis
             </Link>
-            <Link href="/" className="">
+            <Link href="/work" className="">
               Work
             </Link>
-            <Link href="/" className="">
+            <Link href="/about" className="">
               About
             </Link>
             <Link href="/" className="">
@@ -63,17 +63,9 @@ const Footer = () => {
           </div>
 
           <div className="flex flex-1 flex-col gap-5">
-            <p>+1 (212) 555-6789</p>
+            <p>+94 71 887 3678</p>
             <p>jane.doe@xyzcompany.com</p>
-            <p>
-              123-45,
-              <br />
-              U-dong,
-              <br />
-              Haeundae-gu,
-              <br />
-              Busan
-            </p>
+            <p>kalutara</p>
           </div>
         </div>
 

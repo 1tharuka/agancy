@@ -23,10 +23,10 @@ const Navbar = () => {
         <Link href="/Servis" className="">
           Servis
         </Link>
-        <Link href="/" className="">
+        <Link href="/work" className="">
           Work
         </Link>
-        <Link href="/" className="">
+        <Link href="/about" className="">
           About
         </Link>
         <Link href="/" className="">
@@ -60,10 +60,10 @@ const Navbar = () => {
                 <Link href="/Servis" className="text-lg">
                   Servis
                 </Link>
-                <Link href="/" className="text-lg">
+                <Link href="/work" className="text-lg">
                   Work
                 </Link>
-                <Link href="/" className="text-lg">
+                <Link href="/about" className="text-lg">
                   About
                 </Link>
                 <Link href="/" className="text-lg">
