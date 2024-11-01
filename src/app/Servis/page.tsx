@@ -1,5 +1,4 @@
 import Blog from '@/components/Blog';
-import Card from '@/components/Card';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Dot } from 'lucide-react';
 import Link from 'next/link';
@@ -13,7 +12,7 @@ const page = () => {
           <div className="space-y-6">
             <p className="text-sm text-gray-400">Services</p>
             <h1 className=" text-2xl sm:text-4xl font-medium leading-tight">
-              We're a digital <br /> marketing agency <br />
+              We{"'"}re a digital <br /> marketing agency <br />
               with expertise
             </h1>
           </div>
